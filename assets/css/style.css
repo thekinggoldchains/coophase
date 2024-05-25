@@ -16,11 +16,11 @@ body {
 
 a {
   text-decoration: none;
-  color: #fd680e;
+  color: #5acc12;
 }
 
 a:hover {
-  color: #ff8f4c;
+  color: #4fac11;
   text-decoration: none;
 }
 
@@ -32,6 +32,11 @@ h5,
 h6,
 .font-primary {
   font-family: "Raleway", sans-serif;
+}
+
+.bg-primary-coophase {
+  background-color: #5acc12 !important;
+  color: #000 !important;
 }
 
 /*--------------------------------------------------------------
@@ -98,7 +103,7 @@ h6,
 .nav-menu a:focus {
   display: block;
   position: relative;
-  color: #ffd2b7;
+  color: #fff;
   padding: 10px 20px;
   font-weight: 500;
   transition: 0.3s;
@@ -107,7 +112,7 @@ h6,
 .nav-menu a:hover,
 .nav-menu .active>a,
 .nav-menu li:hover>a {
-  color: #ffa26a;
+  color: #4fac11;
   text-decoration: none;
 }
 
@@ -200,7 +205,7 @@ h6,
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 700;
-  color: #884922;
+  color: #fff;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -216,12 +221,12 @@ h6,
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #fd680e;
+  color: #5acc12;
 }
 
 .navbar .getstarted,
 .navbar .getstarted:focus {
-  background: #fd680e;
+  background: #5acc12;
   padding: 8px 20px;
   margin-left: 30px;
   border-radius: 4px;
@@ -231,7 +236,7 @@ h6,
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
   color: #fff;
-  background: #fd7827;
+  background: #4fac11;
 }
 
 .navbar .dropdown ul {
@@ -268,7 +273,7 @@ h6,
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #fd680e;
+  color: #5acc12;
 }
 
 .navbar .dropdown:hover>ul {
@@ -367,7 +372,7 @@ h6,
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #fd680e;
+  color: #5acc12;
 }
 
 .navbar-mobile .getstarted,
@@ -402,7 +407,7 @@ h6,
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #fd680e;
+  color: #5acc12;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -420,6 +425,9 @@ h6,
   position: relative;
   margin-top: -80px;
   z-index: 9;
+}
+.ofuscado {
+  filter: brightness(0.2); /* Ajuste o valor entre 0 e 1 */
 }
 
 #hero .hero-container {
@@ -439,14 +447,22 @@ h6,
 #hero h1 {
   margin: 0 0 10px 0;
   font-size: 48px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 56px;
   line-height: 56px;
-  color: #222;
+  color: #FFF;
+}
+#hero .coophase {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 56px;
+  line-height: 56px;
+  color: #4fac11;
 }
 
 #hero h2 {
-  color: #333;
+  color: #FFF;
   margin-bottom: 30px;
   font-size: 24px;
 }
@@ -522,11 +538,11 @@ h6,
   margin: 10px;
   border: none;
   color: #fff;
-  background: #fd680e;
+  background: #5acc12;
 }
 
 #hero .php-email-form button[type=submit]:hover {
-  background: #fd8841;
+  background: #4fac11;
 }
 
 @media (min-width: 1024px) {
@@ -560,7 +576,7 @@ section {
 }
 
 .section-bg {
-  background-color: #fff7f2;
+  background-color: #e0f4d1;
 }
 
 .section-title {
@@ -582,7 +598,7 @@ section {
   display: block;
   width: 80px;
   height: 1px;
-  background: #fd680e;
+  background: #5acc12;
   bottom: 0;
   left: calc(50% - 40px);
 }
@@ -613,7 +629,7 @@ section {
 .about ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: #fd680e;
+  color: #5acc12;
 }
 
 .about p:last-child {
@@ -646,7 +662,7 @@ section {
   height: 64px;
   padding-top: 10px;
   text-align: center;
-  background-color: #fd680e;
+  background-color: #5acc12;
   border-radius: 50%;
   text-align: center;
   border: 4px solid #fff;
@@ -668,7 +684,7 @@ section {
 }
 
 .why-us .card-title a:hover {
-  color: #fd680e;
+  color: #5acc12;
 }
 
 .why-us .card-text {
@@ -677,8 +693,13 @@ section {
 
 .why-us .card:hover .card-icon i {
   background: #fff;
-  color: #fd680e;
+  color: #5acc12;
 }
+
+/* .why-us img {
+  height: 240px;
+  width: 355px;
+} */
 
 @media (max-width: 1024px) {
   .why-us {
@@ -707,7 +728,7 @@ section {
 .faq .faq-list a {
   display: block;
   position: relative;
-  font-family: #fd680e;
+  font-family: #5acc12;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -736,7 +757,7 @@ section {
 }
 
 .faq .faq-list a.collapsed:hover {
-  color: #fd680e;
+  color: #5acc12;
 }
 
 .faq .faq-list a.collapsed .icon-show {
@@ -756,7 +777,7 @@ section {
 
 .contact .info i {
   font-size: 32px;
-  color: #fd680e;
+  color: #5acc12;
   float: left;
 }
 
@@ -786,7 +807,7 @@ section {
 }
 
 .contact .social-links a:hover {
-  background: #fd680e;
+  background: #5acc12;
   color: #fff;
 }
 
@@ -840,11 +861,11 @@ section {
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border-color: #fd680e;
+  border-color: #5acc12;
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #fd680e;
+  background: #5acc12;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -852,7 +873,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #fd8841;
+  background: #4fac11;
 }
 
 @media (max-width: 768px) {
@@ -870,6 +891,79 @@ section {
     transform: rotate(360deg);
   }
 }
+
+/*--------------------------------------------------------------
+# REGISTRO
+--------------------------------------------------------------*/
+ 
+ #registro form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#registro label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#registro input,
+#registro select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#registro button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+ /* Vantagens */
+ 
+ .advantages {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.advantages i {
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+.advantages h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Requisitos */
+
+.requirements {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.requirements li {
+  margin-bottom: 10px;
+}
+
 
 /*--------------------------------------------------------------
 # Footer
