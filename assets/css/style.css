@@ -426,9 +426,6 @@ h6,
   margin-top: -80px;
   z-index: 9;
 }
-.ofuscado {
-  filter: brightness(0.2); /* Ajuste o valor entre 0 e 1 */
-}
 
 #hero .hero-container {
   position: absolute;
@@ -442,8 +439,13 @@ h6,
   flex-direction: column;
   text-align: center;
   padding: 0 15px;
+  background-color: hsla(0, 0%, 0%, 0.4);
 }
-
+.matte {
+  height: 100%;
+  width: 100%;
+  background-color: hsla(0, 0%, 0%, 0.1);
+}
 #hero h1 {
   margin: 0 0 10px 0;
   font-size: 48px;
