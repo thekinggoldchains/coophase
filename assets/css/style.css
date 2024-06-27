@@ -11,7 +11,26 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: #9B9B9B;
+}
+
+/*** Spinner ***/
+#spinner {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s ease-out, visibility 0s linear .5s;
+  z-index: 99999;
+}
+
+#spinner.show {
+  transition: opacity .5s ease-out, visibility 0s linear 0s;
+  visibility: visible;
+  opacity: 1;
+}
+
+.sticky-top {
+  top: -100px;
+  transition: .5s;
 }
 
 a {
@@ -43,8 +62,6 @@ h6,
 # Header
 --------------------------------------------------------------*/
 #header {
-  height: 80px;
-  padding: 20px 0;
   z-index: 10;
   position: relative;
 }
@@ -419,7 +436,7 @@ h6,
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   background: url("../img/hero-bg.jpg") center center;
   background-size: cover;
   position: relative;
@@ -441,11 +458,13 @@ h6,
   padding: 0 15px;
   background-color: hsla(0, 0%, 0%, 0.4);
 }
+
 .matte {
   height: 100%;
   width: 100%;
   background-color: hsla(0, 0%, 0%, 0.1);
 }
+
 #hero h1 {
   margin: 0 0 10px 0;
   font-size: 48px;
@@ -454,6 +473,7 @@ h6,
   line-height: 56px;
   color: #FFF;
 }
+
 #hero .coophase {
   margin: 0 0 10px 0;
   font-size: 48px;
@@ -637,6 +657,53 @@ section {
 .about p:last-child {
   margin-bottom: 0;
 }
+
+/*** About ***/
+@media (min-width: 992px) {
+  .container.about {
+    max-width: 100% !important;
+  }
+
+  .about-text {
+    padding-right: calc(((100% - 960px) / 2) + .75rem);
+  }
+}
+
+/*** cooperante ***/
+@media (min-width: 992px) {
+  .container.cooperante {
+    max-width: 100% !important;
+  }
+
+ 
+}
+
+/*** Service ***/
+.service-item {
+  box-shadow: 0 0 45px rgba(0, 0, 0, .1);
+  height: 100%;
+}
+
+.service-icon {
+  position: relative;
+  margin: -50px 0 25px 0;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--bs-primary);
+  background: #FFFFFF;
+  border-radius: 100px;
+  box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+  transition: .5s;
+}
+
+.service-item:hover .service-icon {
+  color: #FFFFFF;
+  background: var(--bs-primary);
+}
+
 
 /*--------------------------------------------------------------
 # Why Us
@@ -897,8 +964,8 @@ section {
 /*--------------------------------------------------------------
 # REGISTRO
 --------------------------------------------------------------*/
- 
- #registro form {
+
+/* #registro form {
   width: 100%;
   max-width: 500px;
   margin: 0 auto;
@@ -921,18 +988,17 @@ section {
 }
 
 #registro button {
-  background-color: #007bff;
-  color: #fff;
+
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   margin-top: 20px;
-}
+} */
 
- /* Vantagens */
- 
- .advantages {
+/* Vantagens */
+
+.advantages {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -966,6 +1032,16 @@ section {
   margin-bottom: 10px;
 }
 
+.page-header {
+  background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, .5)), url(../../assets/img/img-600x400-5.jpg) center center no-repeat;
+  background-size: cover;
+  
+}
+
+.page-header p{
+  text-shadow: -2px 1px rgba(black, 0.1);
+   
+}
 
 /*--------------------------------------------------------------
 # Footer

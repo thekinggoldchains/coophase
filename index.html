@@ -3,38 +3,91 @@
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="width=device-width, initial-scale=1.0"
+        name="viewport">
 
   <title>CoopHase - Solução de habitação em Portugal</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta content=""
+        name="description">
+  <meta content=""
+        name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.png"
+        rel="icon">
+  <link href="assets/img/apple-touch-icon.png"
+        rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i"
+        rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="fw/css/font-awesome.min.css">
-  <link href="fw/css/fontawesome.css" rel="stylesheet" />
-  <link href="fw/css/brands.css" rel="stylesheet" />
-  <link href="fw/css/solid.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap/css/bootstrap.css"
+        rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css"
+        rel="stylesheet">
+  <link rel="stylesheet"
+        href="fw/css/font-awesome.min.css">
+  <link href="fw/css/fontawesome.css"
+        rel="stylesheet" />
+  <link href="fw/css/brands.css"
+        rel="stylesheet" />
+  <link href="fw/css/solid.css"
+        rel="stylesheet" />
+  <!-- Libraries Stylesheet -->
+  <link href="assets/vendor/lib/animate/animate.css"
+        rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/style.css"
+        rel="stylesheet">
 </head>
 
 <body>
+  <!-- Spinner Start -->
+  <div id="spinner"
+       class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary"
+         style="width: 3rem; height: 3rem;"
+         role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+  <!-- Spinner End -->
+
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top p-0">
+    <a href="index.html"
+       class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+      <h2 class="m-0 text-primary fw-bold">COOPHASE</h2>
+    </a>
+    <button type="button"
+            class="navbar-toggler me-4"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse"
+         id="navbarCollapse">
+      <div class="navbar-nav ms-auto p-4 py-lg-0">
+        <a href="#hero"
+           class="scrollto">Home</a>
+        <a href="#sobre"
+           class="scrollto">Sobre nós</a>
+        <a href="#vantagens"
+           class="scrollto">Vantagens</a>
+      </div>
+      <a href="#registro"
+         class="btn btn-primary rounded-0 py-4  px-lg-5 d-none d-lg-block scrollto">Saíba mais!<i class="fa fa-arrow-down ms-3"></i></a>
+    </div>
+  </nav>
 
   <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="container-fluid">
+  <header>
+    <!-- Navbar Start -->
+
+    <!-- Navbar End -->
+    <div class="container-fluid d-none">
 
       <div class="logo">
         <h1 class="fw-bold"><a href="index.html">COOPHASE</a></h1>
@@ -42,12 +95,17 @@
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
-      <button type="button" class="nav-toggle"><i class="bx bx-menu"></i></button>
-      <nav class="nav-menu">
+      <button type="button"
+              class="nav-toggle d-lg-none"><i class="bx bx-menu"></i></button>
+      <nav class="nav-menu d-lg-none">
         <ul>
-          <li class="active"><a href="#header" class="scrollto">Home</a></li>
-          <li><a href="#about" class="scrollto">Sobre nós</a></li>
-          <li><a href="#why-us" class="scrollto">Vantagens</a></li>
+          <li class="active">
+            <a href="#header"
+               class="scrollto">Home</a></li>
+          <li><a href="#sobre"
+               class="scrollto">Sobre nós</a></li>
+          <li><a href="#vantagens"
+               class="scrollto">Vantagens</a></li>
           <!-- <li class="drop-down"><a href="">Drop Down</a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
@@ -65,7 +123,8 @@
               <li><a href="#">Drop Down 5</a></li>
             </ul>
           </li> -->
-          <li><a href="#registro" class="scrollto">Faça Parte!</a></li>
+          <li><a href="#registro"
+               class="scrollto">Faça Parte!</a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -75,11 +134,14 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container">
-        <h1>Bem vindo a <span class="coophase">CoopHASE</span></h1>
-        <h2>O caminho para a sustentabilidade e acessibilidade à habitação em Portugal.</h2>
+      <h1>Bem vindo a <span class="coophase">COOPHASE</span></h1>
+      <h2>O caminho para a sustentabilidade e acessibilidade à habitação em Portugal.</h2>
 
 
-      <form action="forms/notify.php" method="post" role="form" class="php-email-form">
+      <form action="forms/notify.php"
+            method="post"
+            role="form"
+            class="php-email-form">
         <!-- <div class="row no-gutters">
           <div class="col-md-6 form-group pr-md-1">
             <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -94,37 +156,151 @@
           <div class="error-message"></div>
           <div class="sent-message">Your notification request was sent. Thank you!</div>
         </div> -->
-        <div class="text-center"><button type="submit" onClick='window.location="#about"'>Ver Mais</button></div>
+        <div class="text-center">
+          <button type="submit"
+                  onClick='window.location="#sobre"'>Ver Mais</button></div>
       </form>
     </div>
   </section><!-- #hero -->
   <main id="main">
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
 
-        <div class="row">
-          <div class="col-lg-6">
-            <img src="assets/img/about-img.jpg" class="img-fluid" alt="">
+    <!-- About Start -->
+    <div class="container-fluid bg-light overflow-hidden px-lg-0" id="sobre">
+      <div class="container about px-lg-0">
+        <div class="row g-0 mx-lg-0">
+          <div class="col-lg-6 ps-lg-0 wow fadeIn"
+               data-wow-delay="0.1s"
+               style="min-height: 400px;">
+            <div class="position-relative h-100">
+              <img class="position-absolute img-fluid w-100 h-100"
+                   src="assets/img/about-img.jpg"
+                   style="object-fit: cover;"
+                   alt="">
+            </div>
           </div>
-          <div class="col-lg-6 pt-4 pt-lg-0">
-            <h3>Sobre a COOPHASE</h3>
-            <p>
-              A COOPHASE nasce da convicção de que a habitação é um direito fundamental e
-              que todos devem ter acesso a um lar digno, em um ambiente saudável e próspero.
-              Guiados por valores como sustentabilidade, comunidade, cooperação, inovação e
-              responsabilidade social, almejamos ser referência em habitação cooperativa e sustentável no país.
-            </p>
+          <div class="col-lg-6 about-text py-5 wow fadeIn"
+               data-wow-delay="0.5s">
+            <div class="p-lg-5 pe-lg-0">
+              <h6 class="text-primary">Sobre nós</h6>
+              <h1 class="mb-4 fw-bold text-black">COOPHASE</h1>
+              <p>A COOPHASE nasce da convicção de que a habitação é um direito fundamental e que todos devem ter acesso a um lar digno, em um ambiente saudável e próspero. Guiados por valores como sustentabilidade, comunidade, cooperação, inovação e responsabilidade social, almejamos ser referência em habitação cooperativa e sustentável no país.</p>
+              <!-- <p><i class="fa fa-check-circle text-primary me-3"></i>Diam dolor diam ipsum</p>
+                      <p><i class="fa fa-check-circle text-primary me-3"></i>Aliqu diam amet diam et eos</p>
+                      <p><i class="fa fa-check-circle text-primary me-3"></i>Tempor erat elitr rebum at clita</p> -->
+              <a href=""
+                 class="btn btn-primary rounded-pill py-3 px-5 mt-3">Saiba mais!</a>
+            </div>
           </div>
         </div>
-
       </div>
-    </section><!-- End About Section -->
+    </div>
+    <!-- About End -->
+
+    <!-- Vantagem Start -->
+    <div class="container-xxl py-5" id="vantagens">
+      <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp"
+             data-wow-delay="0.1s"
+             style="max-width: 600px;">
+          <h6 class="text-primary">Vantagens</h6>
+          <h1 class="mb-4 text-black">Vantagens e Benefícios</h1>
+        </div>
+        <div class="row justify-content-center align-items-stretch g-4">
+          <div class="col-md-6 col-lg-4 wow fadeInUp"
+               data-wow-delay="0.1s">
+            <div class="service-item rounded-4 overflow-hidden">
+              <img class="img-fluid"
+                   src="assets/img/why-us-1.jpg"
+                   alt="">
+              <div class="position-relative p-4 pt-0">
+                <div class="service-icon">
+                  <i class="fa fa-home fa-3x"></i>
+                </div>
+                <h4 class="mb-3 text-primary">Casas Modulares à Venda</h4>
+                <p>Oferecemos casas modulares de alta qualidade, construídas com materiais ecológicos e tecnologia de ponta, proporcionando conforto, eficiência energética e um estilo de vida moderno.</p>
+                <a class="small fw-medium"
+                href="#registro">Saiba mais<i class="fa fa-arrow-down ms-2"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeInUp"
+               data-wow-delay="0.3s">
+            <div class="service-item rounded-4 overflow-hidden">
+              <img class="img-fluid"
+                   src="assets/img/why-us-2.jpg"
+                   alt="">
+              <div class="position-relative p-4 pt-0">
+                <div class="service-icon">
+                  <i class="fa fa-leaf fa-3x"></i>
+                </div>
+                <h4 class="mb-3 text-primary">Condomínios Ecológicos</h4>
+                <p>Nossos condomínios são projetados para minimizar o impacto ambiental, com painéis solares fotovoltaicos, sistemas de reuso de água da chuva, espaços verdes e práticas sustentáveis.</p>
+                <a class="small fw-medium"
+                   href="#registro">Saiba mais<i class="fa fa-arrow-down ms-2"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeInUp"
+               data-wow-delay="0.5s">
+            <div class="service-item rounded-4 overflow-hidden">
+              <img class="img-fluid"
+                   src="assets/img/why-us-3.jpg"
+                   alt="">
+              <div class="position-relative p-4 pt-0">
+                <div class="service-icon">
+                  <i class="fa fa-handshake fa-3x"></i>
+                </div>
+                <h4 class="mb-3 text-primary">Comunidade e Cooperação</h4>
+                <p>Criamos espaços que promovem a interação entre os moradores, fomentando o senso de comunidade, pertencimento e colaboração.</p>
+                <a class="small fw-medium"
+                   href="#registro">Saiba mais<i class="fa fa-arrow-down ms-2"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeInUp"
+               data-wow-delay="0.1s">
+            <div class="service-item rounded-4 overflow-hidden">
+              <img class="img-fluid"
+                   src="assets/img/why-us-4.jpg"
+                   alt="">
+              <div class="position-relative p-4 pt-0">
+                <div class="service-icon">
+                  <i class="fa fa-money-bill fa-3x"></i>
+                </div>
+                <h4 class="mb-3 text-primary">Preço Acessível</h4>
+                <p>Criamos espaços que promovem a interação entre os moradores, fomentando o senso de comunidade, pertencimento e colaboração.</p>
+                <a class="small fw-medium"
+                   href="#registro">Saiba mais<i class="fa fa-arrow-down ms-2"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeInUp"
+               data-wow-delay="0.3s">
+            <div class="service-item rounded-4 overflow-hidden">
+              <img class="img-fluid"
+                   src="assets/img/why-us-5.jpg"
+                   alt="">
+              <div class="position-relative p-4 pt-0">
+                <div class="service-icon">
+                  <i class="fa fa-location-dot fa-3x"></i>
+                </div>
+                <h4 class="mb-3 text-primary">Localização Privilegiada</h4>
+                <p>Nossos condomínios estão localizados em regiões estratégicas, como Covilhã e Algarve (próximo a Tavira), oferecendo acesso a serviços, lazer e natureza.</p>
+                <a class="small fw-medium"
+                   href="#registro">Saiba mais<i class="fa fa-arrow-down ms-2"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- Service End -->
 
     <!-- ======= Why Us Section ======= -->
-    <section id="why-us" class="why-us section-bg">
-      <div class="container">
+    <!-- <section id="why-us" class="why-us section-bg">
+      <div class="container wow fadeIn" data-wow-delay="0.1s">
         <h2 class="title">Vantagens e Benefícios</h2>
 
         <div class="row">
@@ -198,9 +374,41 @@
         </div>
 
       </div>
-    </section><!-- End Why Us Section -->
+    </section> -->
+    <!-- End Why Us Section -->
+    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+      <div class="container cooperante px-lg-0">
+        <div class="row g-0 mx-lg-0">
 
-    <section id="requisitos" class="section bg-primary container-fluid">
+          <div class="col-lg-6 cooperante-text py-5 wow fadeIn"
+               data-wow-delay="0.5s">
+            <div class="p-lg-5 pe-lg-0">
+              <h6 class="text-primary">Cooperante</h6>
+              <h1 class="mb-4 text-dark">Para se Tornar um Cooperante</h1>
+              <p><i class="fa fa-check-circle text-primary me-3"></i>Ser maior de 18 anos</p>
+              <p><i class="fa fa-check-circle text-primary me-3"></i>Ter capacidade financeira para arcar com as obrigações da cooperativa</p>
+              <p><i class="fa fa-check-circle text-primary me-3"></i>Concordar com os princípios e valores da COOPHASE</p>
+              <p><i class="fa fa-check-circle text-primary me-3"></i>Participar ativamente da vida da cooperativa</p>
+              <a href="#registro"
+                 class="btn btn-primary rounded-pill py-3 px-5 mt-3">Saiba mais</a>
+            </div>
+          </div>
+          <div class="col-lg-6 ps-lg-0 wow fadeIn"
+               data-wow-delay="0.1s"
+               style="min-height: 400px;">
+            <div class="position-relative h-100">
+              <img class="position-absolute img-fluid w-100 h-100"
+                   src="assets/img/why-us-6.jpg"
+                   style="object-fit: cover;"
+                   alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <section id="requisitos"
+             class="section bg-primary container-fluid">
       <div class="container text-white ">
         <div class="col">
           <h1>
@@ -215,49 +423,102 @@
           <li>Participar ativamente da vida da cooperativa.</li>
         </ul>
         <div class="button-container">
-      </div>
-    </section>
+        </div>
+    </section> -->
+
 
     <!-- ======= Contact Us Section ======= -->
-    <section id="registro" class="section">
+    <section id="registro"
+             class="section wow fadeIn"
+             data-wow-delay="0.1s">
       <div class="container">
-        <h2 class="title">Registro de Interesse</h2>
-        <p class="text">Preencha o formulário abaixo para se cadastrar e receber informações sobre os próximos
-          lançamentos de condomínios da COOPHASE.</p>
-        <section id="registro">
-          <form action="#">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required></p>
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required></p>
-            <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone" name="telefone" required></p>
-            <label for="cidade_residencia">Cidade de Residência:</label>
-            <input type="text" id="cidade_residencia" name="cidade_residencia"></p>
-            <label for="cidade">Cidade de Interesse: </label>
-            <select id="cidade" name="cidade" required>
-              <option value="covilha">Covilhã</option>
-              <option value="faro">Faro</option>
-            </select></p>
+        <div class="row">
+          <div class="col-lg-6">
+            <h6 class="text-primary">Registro de Interesse</h6>
+            <h5 class="mb-4 text-dark lh-base">Preencha o formulário para se cadastrar e receber informações sobre os próximos
+              lançamentos de condomínios da <span class="text-primary fw-semibold">COOPHASE</span>.</h5>
 
-            <button type="submit">Enviar</button>
-          </form>
-        </section>
+          </div>
+          <div class="col-lg-6">
 
-      </div section id="conclusao" class="section">
-      <div class="container">
-        <h2 class="title">Conclusão</h2>
-        <p class="text">A COOPHASE é mais do que apenas uma cooperativa de casas. Somos um movimento que visa
+            <form action="#">
+              <div class="d-flex flex-column gap-3">
+                <div class="form-floating">
+                  <input type="text"
+                         class="form-control"
+                         id="nome"
+                         name="nome"
+                         placeholder="Nome"
+                         required />
+                  <label for="nome">Nome:</label>
+                </div>
+
+                <div class="form-floating">
+                  <input type="email"
+                         class="form-control"
+                         id="email"
+                         name="email"
+                         placeholder="E-mail"
+                         required>
+                  <label for="email">E-mail:</label>
+                </div>
+                <div class="form-floating">
+                  <input type="tel"
+                         class="form-control"
+                         id="telefone"
+                         name="telefone"
+                         placeholder="Telefone"
+                         required>
+                  <label for="telefone">Telefone:</label>
+                </div>
+                <div class="form-floating">
+                  <input type="text"
+                         class="form-control"
+                         id="cidade_residencia"
+                         placeholder="Cidade de Residência"
+                         name="cidade_residencia">
+                  <label for="cidade_residencia">Cidade de Residência:</label>
+                </div>
+                <div class="form-floating">
+                  <select id="cidade"
+                          class="form-select"
+                          name="cidade"
+                          required>
+                    <option selected>Selecione</option>
+                    <option value="covilha">Covilhã</option>
+                    <option value="faro">Faro</option>
+                  </select>
+                  <label for="cidade">Cidade de Interesse: </label>
+                </div>
+                <button type="submit"
+                        class="btn btn-primary rounded-pill py-3 px-5 mt-3">Enviar</button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+    <!-- Page Conclusão Start -->
+    <div class="container-fluid page-header py-5 ">
+      <div class="container py-5">
+        <h2 class="display-3 fw-bold text-primary mb-3 animated slideInDown">Conclusão</h2>
+        <p class="text-dark">A COOPHASE é mais do que apenas uma cooperativa de casas. Somos um movimento que visa
           transformar a vida das pessoas e das comunidades através da construção de um futuro mais sustentável,
           justo e inclusivo.
-        <p class="text"> Junte-se a nós e faça parte da mudança!</p>
+        <p class="text-dark"> Junte-se a nós e faça parte da mudança!</p>
       </div>
-    </section><!-- End Contact Us Section -->
+    </div>
+    <!-- Page Conclusão End -->
+
 
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer" class="bg-primary">
+  <footer id="footer"
+          class="bg-primary">
     <div class="container">
       <div class="copyright">
         &copy; Copyright <strong><span>COOPHASE</span></strong>. All Rights Reserved
@@ -273,10 +534,18 @@
   </footer><!-- End #footer -->
 
   <!-- Vendor JS Files -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/lib/wow/wow.js"></script>
 
   <!-- Template Main JS File -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init("YOUR_USER_ID");
+    })();
+  </script>
   <script src="assets/js/main.js"></script>
 
 </body>
