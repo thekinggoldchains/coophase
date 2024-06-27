@@ -85,13 +85,13 @@
 
   // Sticky Navbar
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 300) {
+    if ($(this).scrollTop() > 200) {
       $('.sticky-top').addClass('shadow-sm bg-dark bg-opacity-50').css({ 'top': '0px', 'height': '45px' });
-      $('.scrollto').removeClass('py-4').css({ 'top': '0px', 'height': '45px' });
+      $('.scrollto').removeClass('py-lg-4').css({ 'top': '0px', 'height': '45px' });
       $('.navbar-brand h2').addClass('text-white').removeClass('text-primary');
     } else {
       $('.sticky-top').removeClass('shadow-sm bg-dark bg-opacity-50').css({ 'top': '-100px', 'height': 'auto' });
-      $('.scrollto').addClass('py-4').css({ 'top': '0px', 'height': 'auto' });
+      $('.scrollto').addClass('py-lg-4').css({ 'top': '0px', 'height': 'auto' });
       $('.navbar-brand h2').removeClass('text-white').addClass('text-primary');
     }
   });

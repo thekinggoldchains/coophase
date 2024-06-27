@@ -33,6 +33,14 @@ body {
   transition: .5s;
 }
 
+@media (max-width: 991px) {
+  .sticky-top {
+    background-color: #ffffff;
+  }
+
+ 
+}
+
 a {
   text-decoration: none;
   color: #5acc12;
@@ -234,6 +242,30 @@ h6,
   margin-left: 5px;
 }
 
+@media (max-width: 991px) {
+ 
+
+  .navbar-nav a{
+    color: #000;
+  }
+
+  .navbar-collapse{
+    background-color: #fff;
+    margin-top: -5px;
+  }
+}
+
+.navbar-toggler{
+  background-color: #fff;
+  font-size: 14px;
+}
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
+}
+
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
@@ -343,10 +375,14 @@ h6,
     display: block;
   }
 
+
+
   .navbar ul {
     display: none;
   }
 }
+
+
 
 .navbar-mobile {
   position: fixed;
